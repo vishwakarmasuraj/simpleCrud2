@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use('/api', routes)
 
 mongoose.connect(process.env.DATABASE_CONNECTION).then(() => {
-    console.log('Successfully connected to DB')
+    console.log('Successfully connected to Database')
 })
 
 app.listen(port, () => console.log(`Server is listening at ${ port }`))
